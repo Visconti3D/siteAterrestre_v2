@@ -1,0 +1,249 @@
+body {
+    font-family: 'Zilla Slab', serif;
+    background-color: rgb(131, 138, 138);
+    overflow-x: hidden;
+    margin: 0;
+    border: 0;
+  }
+    
+  .tela {
+    max-width: 1440px;
+    margin: 0 auto;
+    float: none;
+  }
+  
+  .top--bar {
+    position: fixed;
+    top: 0;
+    font-family: 'Zilla Slab', serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    float: none;
+    background-color: #2B2B2B;
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-family: 'Zilla Slab', serif;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+.principal {
+  background-color: #FFFFFF;
+  margin-top: 90px;
+  font-family: 'Zilla Slab', serif;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title--equipe {
+  background-color: #FFFFFF;
+  font-family: 'Zilla Slab', serif;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo--equipe {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+}
+
+.maos--equipe {
+  position: absolute;
+  margin-left: 401px;
+  margin-top: 150px;
+}
+
+.maos--equipe img {
+  width: 125px;
+}
+
+.equipe{
+  font-family: 'Zilla Slab', serif;
+}
+
+h1 {
+  color: #7b7b7b;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 2em;
+  grid-area: photo;
+}
+
+h2 {
+  color: #2b2b2b;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.2em;
+  grid-area: photo;
+  font-weight: bold;
+}
+
+.equipe p {
+  color: #2b2b2b;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.equipe--logo {
+  width: 60%;
+  margin-top: 30px;
+  z-index: 50;
+}
+
+.equipe {
+  background-color: #fff;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.9em;
+  color: #FFFFFF;
+  grid-area: photo;
+  padding-top: 180px;
+  padding-bottom: 80px;
+}
+
+.div__equipe>ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 60px;
+}
+
+.ul__equipe {
+  list-style-type: none;
+  padding: 0px 150px 20px;
+}
+
+.ul__equipe li {
+  text-align: center;
+  padding: 20px 0px 0px 0px;
+}
+
+.ul__equipe li a {
+  text-decoration: none;
+  color: #2b2b2b;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.membro {
+  cursor: pointer;
+  width: 60%;
+  border-radius: 150px;
+}
+
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-20px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+#blob--banner {
+  position: absolute;
+  margin-right: 0px;
+  margin-top: -100px;
+  width: 550px;
+  height: 550px;
+  fill: #2B2B2B;
+  transform: translatey(50px);
+  animation: float 120s ease-in-out infinite;
+}
+
+#blob--projetos {
+  position: absolute;
+  margin-right: 0px;
+  margin-top: -80px;
+  width: 350px;
+  height: 350px;
+  fill: #2B2B2B;
+  transform: translatey(50px);
+  animation: float 9s ease-in-out infinite;
+}
+
+#blob1 {
+  position: absolute;
+  margin-right: 604px;
+  margin-top: 60px;
+  width: 50px;
+  height: 50px;
+  fill: none;
+  stroke: #dddddd;
+  stroke-width: 40px;
+  transform: translatey(0px);
+  animation: float 5s ease-in-out infinite;
+}
+
+#blob2 {
+  position: absolute;
+  margin-right: 410px;
+  margin-top: 124px;
+  width: 110px;
+  height: 110px;
+  fill: none;
+  stroke: #dddddd;
+  stroke-width: 20px;
+  transform: translatey(0px);
+  animation: float 9s ease-in-out infinite;
+}
+
+#blob3 {
+  position: absolute;
+  margin-left: 600px;
+  margin-top: 64px;
+  width: 80px;
+  height: 80px;
+  fill: none;
+  stroke: #dddddd;
+  stroke-width: 16px;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+.foot {
+  background-color: #fff;
+  margin: 0px;
+  font-family: 'Zilla Slab', serif;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.foot--logo {
+  width: 10%;
+}
+
+.foot p {
+  color: #6e6e6e;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}

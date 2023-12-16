@@ -1,0 +1,24 @@
+Relatório criado: 
+	07/12/2023	15:18:29
+
+Nome do projeto: terrestre logo animada.aep
+
+Arquivos de origem coletados em: 
+	C:\Users\Estevao Mendes\Pictures\STUDIO\A TERRESTRE\logo animada\terrestre logo animada pasta
+
+Arquivos de origem coletados: Tudo
+
+Composições coletadas:  
+	Composição 1
+	logo para animacao 2
+	
+Número de arquivos coletados: 1
+
+Tamanho dos arquivos coletados: 473 KB
+
+Arquivos de origem coletados: 
+	C:\Users\Estevao Mendes\Pictures\STUDIO\A TERRESTRE\logo para animacao.ai
+	
+Plug-ins de renderização:
+	3D clássico
+	
