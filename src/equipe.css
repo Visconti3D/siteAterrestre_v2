@@ -1,42 +1,42 @@
 body {
-    font-family: 'Zilla Slab', serif;
-    background-color: rgb(131, 138, 138);
-    overflow-x: hidden;
-    margin: 0;
-    border: 0;
-  }
-    
-  .tela {
-    max-width: 1440px;
-    margin: 0 auto;
-    float: none;
-  }
-  
-  .top--bar {
-    position: fixed;
-    top: 0;
-    font-family: 'Zilla Slab', serif;
-    max-width: 1440px;
-    margin: 0 auto;
-    float: none;
-    background-color: #2B2B2B;
-    width: 100vw;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-  }
-  
-  nav a {
-    text-decoration: none;
-    font-family: 'Zilla Slab', serif;
-    color: #FFFFFF;
-    font-size: 1.2em;
-    font-weight: 400;
-    padding-left: 60px;
-    padding-right: 60px;
-  }
+  font-family: 'Zilla Slab', serif;
+  background-color: rgb(131, 138, 138);
+  overflow-x: hidden;
+  margin: 0;
+  border: 0;
+}
+
+.tela {
+  max-width: 1440px;
+  margin: 0 auto;
+  float: none;
+}
+
+.top--bar {
+  position: fixed;
+  top: 0;
+  font-family: 'Zilla Slab', serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  float: none;
+  background-color: #2B2B2B;
+  width: 100vw;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: 'Zilla Slab', serif;
+  color: #FFFFFF;
+  font-size: 1.2em;
+  font-weight: 400;
+  padding-left: 60px;
+  padding-right: 60px;
+}
 
 .principal {
   background-color: #FFFFFF;
@@ -70,15 +70,19 @@ body {
 
 .maos--equipe {
   position: absolute;
-  margin-left: 401px;
+  margin-left: 351px;
   margin-top: 150px;
+  z-index: 10;
+  transform: translatey(-15px);
+  animation: float 6s ease-in-out infinite;
 }
 
 .maos--equipe img {
   width: 125px;
+
 }
 
-.equipe{
+.equipe {
   font-family: 'Zilla Slab', serif;
 }
 
@@ -145,8 +149,15 @@ h2 {
   font-weight: 400;
 }
 
+.membros a,
+h1,
+h2,
+p {
+  cursor: initial;
+}
+
+
 .membro {
-  cursor: pointer;
   width: 60%;
   border-radius: 150px;
 }
@@ -186,6 +197,7 @@ h2 {
   fill: #2B2B2B;
   transform: translatey(50px);
   animation: float 9s ease-in-out infinite;
+  z-index: 10;
 }
 
 #blob1 {
@@ -225,6 +237,18 @@ h2 {
   stroke-width: 16px;
   transform: translatey(0px);
   animation: float 6s ease-in-out infinite;
+}
+
+#blob--gray1 {
+  position: absolute;
+  margin-left: 350px;
+  margin-top: 76px;
+  width: 225px;
+  height: 225px;
+  fill: #dddddd;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  z-index: 0;
 }
 
 .foot {

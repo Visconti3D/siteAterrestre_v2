@@ -1,17 +1,17 @@
 body {
-    font-family: 'Zilla Slab', serif;
-    background-color: rgb(131, 138, 138);
-    overflow-x: hidden;
-    margin: 0;
-    border: 0;
-  }
-    
-  .tela {
-    max-width: 1440px;
-    margin: 0 auto;
-    float: none;
-  }
-  
+  font-family: 'Zilla Slab', serif;
+  background-color: rgb(131, 138, 138);
+  overflow-x: hidden;
+  margin: 0;
+  border: 0;
+}
+
+.tela {
+  max-width: 1440px;
+  margin: 0 auto;
+  float: none;
+}
+
 .top--bar {
   position: fixed;
   top: 0;
@@ -74,19 +74,23 @@ nav a {
 
 .logo--contato img {
   width: 60%;
+  z-index: 70;
 }
 
 .pes--contato {
   position: absolute;
   margin-left: 328px;
-  margin-top: 134px;
+  margin-top: 155px;
+  z-index: 3;
+  transform: translatey(15px);
+  animation: float 6s ease-in-out infinite;
 }
 
 .pes--contato img {
-  width: 125px;
+  width: 115px;
 }
 
-.contato{
+.contato {
   background-color: #fff;
   font-size: 0.9em;
   color: #FFFFFF;
@@ -113,7 +117,7 @@ nav a {
   justify-content: center;
 }
 
-form{
+form {
   width: 100%;
   max-width: 500px;
 }
@@ -129,7 +133,7 @@ input {
   background: #D9D9D9;
   border: 0px;
   border-radius: 30px;
-  box-shadow: inset 2px 2px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 textarea {
@@ -138,7 +142,7 @@ textarea {
   background: #D9D9D9;
   border: 0px;
   border-radius: 40px;
-  box-shadow: inset 2px 2px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .div__submit {
@@ -160,7 +164,7 @@ button {
   background: #cacaca;
   border: 0px;
   border-radius: 60px;
-  box-shadow: inset 2px 2px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
@@ -178,9 +182,9 @@ label {
   transition: 0.2s;
 }
 
-input:focus~label, 
+input:focus~label,
 input:valid~label,
-textarea:focus~label, 
+textarea:focus~label,
 textarea:valid~label {
   top: -35px;
   font-size: 1.2em;
@@ -220,17 +224,18 @@ textarea:valid~label {
   fill: #2B2B2B;
   transform: translatey(50px);
   animation: float 9s ease-in-out infinite;
+  z-index: 60;
 }
 
 #blob1 {
   position: absolute;
-  margin-right: 604px;
-  margin-top: 60px;
-  width: 50px;
+  margin-right: 782px;
+  margin-top: 307px;
+  width: 60px;
   height: 50px;
   fill: none;
   stroke: #dddddd;
-  stroke-width: 40px;
+  stroke-width: 70px;
   transform: translatey(0px);
   animation: float 5s ease-in-out infinite;
 }
@@ -243,30 +248,81 @@ textarea:valid~label {
   height: 110px;
   fill: none;
   stroke: #dddddd;
-  stroke-width: 20px;
+  stroke-width: 32px;
   transform: translatey(0px);
   animation: float 9s ease-in-out infinite;
 }
 
 #blob3 {
   position: absolute;
-  margin-left: 600px;
-  margin-top: 64px;
+  margin-left: 800px;
+  margin-top: 214px;
   width: 80px;
   height: 80px;
   fill: none;
   stroke: #dddddd;
-  stroke-width: 16px;
+  stroke-width: 42px;
   transform: translatey(0px);
   animation: float 6s ease-in-out infinite;
 }
+
+#blob4 {
+  position: absolute;
+  margin-right: 0px;
+  margin-top: 1018px;
+  width: 60px;
+  height: 50px;
+  fill: none;
+  stroke: #dddddd;
+  stroke-width: 70px;
+  transform: translatey(-5px);
+  animation: float 8s ease-in-out infinite;
+}
+
+
+#blob--gray1 {
+  position: absolute;
+  margin-left: 327px;
+  margin-top: 100px;
+  width: 230px;
+  height: 230px;
+  fill: #dddddd;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  z-index: 0;
+}
+
+#blob--gray2 {
+  position: absolute;
+  margin-left: 72px;
+  margin-top: 236px;
+  width: 60px;
+  height: 125px;
+  fill: #dddddd;
+  transform: translatey(-30px);
+  animation: float 9s ease-in-out infinite;
+  z-index: 0;
+}
+
+#blob--gray3 {
+  position: absolute;
+  margin-left: -772px;
+  margin-top: 100px;
+  width: 80px;
+  height: 125px;
+  fill: #dddddd;
+  transform: translatey(20px);
+  animation: float 3s ease-in-out infinite;
+  z-index: 0;
+}
+
 
 .foot {
   background-color: #fff;
   margin: 0px;
   font-family: 'Zilla Slab', serif;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 80px;
   padding-bottom: 20px;
 }
 
