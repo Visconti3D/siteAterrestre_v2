@@ -194,6 +194,32 @@ nav a {
   }
 }
 
+@keyframes float2 {
+  0% {
+    transform: translatex(0px);
+  }
+
+  50% {
+    transform: translatex(10px);
+  }
+
+  100% {
+    transform: translatex(0px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+
 #blob--banner {
   position: absolute;
   margin-right: 0px;
@@ -214,6 +240,7 @@ nav a {
   fill: #2B2B2B;
   transform: translatey(50px);
   animation: float 9s ease-in-out infinite;
+  z-index: 20;
 }
 
 #blob1 {
@@ -253,6 +280,79 @@ nav a {
   stroke-width: 16px;
   transform: translatey(0px);
   animation: float 6s ease-in-out infinite;
+}
+
+#blob--gray {
+  position: absolute;
+  margin-left: -707px;
+  margin-top: 562px;
+  width: 35px;
+  height: 35px;
+  fill: #dddddd;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  z-index: 0;
+}
+
+#blob--gray1 {
+  position: absolute;
+  margin-left: 289px;
+  margin-top: 310px;
+  width: 55px;
+  height: 55px;
+  fill: #ababab;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  z-index: 0;
+}
+
+#blob--gray2 {
+  position: absolute;
+  margin-left: 72px;
+  margin-top: 297px;
+  width: 90px;
+  height: 90px;
+  fill: #dddddd;
+  transform: translatey(-30px);
+  animation: float 9s ease-in-out infinite;
+  z-index: 0;
+}
+
+#blob--gray3 {
+  position: absolute;
+  margin-left: -329px;
+  margin-top: 245px;
+  width: 55px;
+  height: 55px;
+  fill: #ababab;
+  transform: translatey(20px);
+  animation: float 3s ease-in-out infinite;
+  z-index: 0;
+}
+
+
+.pedras {
+  position: absolute;
+  margin-left: -231px;
+  margin-top: 0px;
+  width: 914px;
+  height: 341px;
+  z-index: 1;
+}
+
+#pedras1 {
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+#pedras2 {
+  transform: translatey(-10px);
+  animation: float 9s ease-in-out infinite;
+}
+
+#pedras3 {
+  transform: translatey(10px);
+  animation: float 3s ease-in-out infinite;
 }
 
 #webgi-canvas {
