@@ -30,11 +30,20 @@ body {
 
 nav a {
   text-decoration: none;
+  font-family: 'Zilla Slab', serif;
   color: #FFFFFF;
   font-size: 1em;
   font-weight: 400;
   padding-left: 60px;
   padding-right: 60px;
+}
+
+h2 {
+  color: #2b2b2b;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.2em;
+  grid-area: photo;
+  font-weight: bold;
 }
 
 .principal {
@@ -57,7 +66,8 @@ nav a {
 }
 
 .main--logo {
-  width: 60%;
+  margin: 120px;
+  width: 25%;
   z-index: 50;
 }
 
