@@ -37,10 +37,33 @@ nav a {
   padding-right: 60px;
 }
 
+
+.top-empty-bar {
+  display: none;
+}
+
+.hidden {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 600px;
+  padding: 120px 0;
+  background: #222;
+  z-index: 200;
+}
+
+
 h2 {
   color: #2b2b2b;
   font-size: 1.2em;
   grid-area: photo;
+  font-weight: bold;
+}
+
+#bold {
+  font-size: 1.2em;
   font-weight: bold;
 }
 
@@ -175,7 +198,7 @@ button {
   cursor: pointer;
 }
 
-label {
+form label {
   width: 100%;
   text-align: center;
   color: #2B2B2B;
@@ -189,13 +212,14 @@ label {
   transition: 0.2s;
 }
 
-input:focus~label,
-input:valid~label,
+form input:focus~label,
+form input:valid~label,
 textarea:focus~label,
 textarea:valid~label {
   top: -35px;
   font-size: 1.2em;
 }
+
 
 @keyframes float {
   0% {
@@ -343,4 +367,279 @@ textarea:valid~label {
   font-weight: 400;
   margin-block-start: 0;
   margin-block-end: 0;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .top--bar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    top: 0;
+    font-family: 'Zilla Slab', serif;
+    max-width: 700px;
+    margin: 0 auto;
+    float: none;
+    background-color: #2B2B2B;
+    width: 100vw;
+    height: 90px;
+    z-index: 100;
+  }
+
+  nav a {
+    text-decoration: none;
+    font-family: 'Zilla Slab', serif;
+    color: #FFFFFF;
+    font-size: 1em;
+    font-weight: 400;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+
+  .pes--contato {
+    position: absolute;
+    margin-left: 228px;
+    margin-top: 225px;
+    z-index: 3;
+    transform: translatey(15px);
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .pes--contato img {
+    width: 100px;
+  }
+
+  .contato {
+    background-color: #fff;
+    font-size: 0.9em;
+    color: #FFFFFF;
+    grid-area: photo;
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
+  form {
+    width: 80%;
+    max-width: 500px;
+  }
+
+  button {
+    width: 30%;
+    text-align: center;
+    color: #2B2B2B;
+    font-size: 1em;
+    font-weight: 400;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    background: #cacaca;
+    border: 0px;
+    border-radius: 60px;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+
+  #blob--gray1 {
+    position: absolute;
+    margin-left: 237px;
+    margin-top: 175px;
+    width: 200px;
+    height: 200px;
+    fill: #dddddd;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    z-index: 0;
+  }
+
+  #blob--gray2 {
+    position: absolute;
+    margin-left: 02px;
+    margin-top: 236px;
+    width: 60px;
+    height: 125px;
+    fill: #dddddd;
+    transform: translatey(-30px);
+    animation: float 9s ease-in-out infinite;
+    z-index: 0;
+  }
+
+
+  #blob4 {
+    position: absolute;
+    margin-right: 0px;
+    margin-top: 1068px;
+    width: 60px;
+    height: 50px;
+    fill: none;
+    stroke: #dddddd;
+    stroke-width: 50px;
+    transform: translatey(-5px);
+    animation: float 8s ease-in-out infinite;
+  }
+
+
+  .foot--logo {
+    width: 30%;
+  }
+
+  .top-empty-bar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    float: none;
+    background-color: #2B2B2B;
+    width: 100vw;
+    height: 90px;
+    z-index: 100;
+  }
+
+
+  .hidden ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* drawer menu */
+  .drawer-menu {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 480px;
+    padding: 120px 0;
+    background: #2B2B2B;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transform-origin: left center;
+    -ms-transform-origin: left center;
+    transform-origin: left center;
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+
+  .drawer-menu li {
+    text-align: center;
+  }
+
+  .drawer-menu li a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #fff;
+    -webkit-transition: all .8s;
+    transition: all .8s;
+  }
+
+  .drawer-menu li a:hover {
+    color: #1a1e24;
+    background: #fff;
+  }
+
+  /* checkbox */
+  .check {
+    display: none;
+  }
+
+  /* menu button - label tag */
+  .menu-btn {
+    color: #fff;
+    position: fixed;
+    display: block;
+    top: 30px;
+    left: 20px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    z-index: 300;
+  }
+
+
+  .menu-btn:hover .bar {
+    background: #FFFFFF;
+  }
+
+  .close-menu {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    cursor: url(http://theorthodoxworks.com/demo/images/cross.svg), auto;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  /* checked */
+  .check:checked~.drawer-menu {
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    opacity: 100;
+    z-index: 2;
+  }
+
+  .check:checked~.contents {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transform: translateX(-300px);
+    -ms-transform: translateX(-300px);
+    transform: translateX(-300px);
+  }
+
+  .check:checked~.menu-btn .menu-btn__text {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .check:checked~.menu-btn .bar.top {
+    width: 56px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .check:checked~.menu-btn .bar.middle {
+    opacity: 0;
+  }
+
+  .check:checked~.menu-btn .bar.bottom {
+    width: 56px;
+    top: 40px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .check:checked~.close-menu {
+    color: #fff;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+    background: #2B2B2B;
+    visibility: visible;
+    opacity: 0;
+    z-index: 3;
+  }
+
 }
